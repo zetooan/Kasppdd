@@ -1,0 +1,149 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  Caption = 'Rekap Data'
+  ClientHeight = 164
+  ClientWidth = 369
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = MostTop
+    Fill.Color = claRoyalblue
+    Size.Width = 369.000000000000000000
+    Size.Height = 45.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claRoyalblue
+    OnClick = Rectangle1Click
+    object Label1: TLabel
+      Align = Left
+      StyledSettings = [Family]
+      Size.Width = 137.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.FontColor = claWhite
+      Text = '   <- Rekap Data'
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Align = Client
+    Size.Width = 369.000000000000000000
+    Size.Height = 119.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 369.000000000000000000
+    Viewport.Height = 119.000000000000000000
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      Text = 'Bulan'
+    end
+    object Tahun: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      Text = 'Tahun'
+    end
+    object ComboBox1: TComboBox
+      Items.Strings = (
+        'Januari'
+        'Februari'
+        'Maret'
+        'April'
+        'Mei'
+        'Juni'
+        'Juli'
+        'Agustus'
+        'September'
+        'Oktober'
+        'November'
+        'Desember')
+      Position.X = 72.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+    object ComboBox2: TComboBox
+      Items.Strings = (
+        '2020'
+        '2021'
+        '2022'
+        '2023'
+        '2024'
+        '2025'
+        '2026'
+        '2027'
+        '2028'
+        '2029'
+        '2030')
+      Position.X = 72.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+    end
+    object Button1: TButton
+      Position.X = 208.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Buat Rekap'
+      OnClick = Button1Click
+    end
+    object Label3: TLabel
+      StyledSettings = [Family, Size, Style]
+      Position.X = 8.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claRed
+    end
+  end
+  object MyConnection1: TMyConnection
+    Database = 'ppdd_kas'
+    Username = 'root'
+    Server = 'localhost'
+    Connected = True
+    LoginPrompt = False
+    Left = 328
+    Top = 45
+  end
+  object MyQuery1: TMyQuery
+    Connection = MyConnection1
+    SQL.Strings = (
+      
+        'SELECT no_dana, bulan, no_anggota, jumlah FROM dana WHERE status' +
+        ' ='#39'lunas'#39)
+    Active = True
+    Left = 192
+    Top = 5
+  end
+  object MyQuery2: TMyQuery
+    Connection = MyConnection1
+    SQL.Strings = (
+      
+        'SELECT no_dana, bulan, kegiatan, jumlah FROM dana WHERE keterang' +
+        'an ='#39'masuk'#39)
+    Active = True
+    Left = 256
+    Top = 5
+  end
+  object MyQuery3: TMyQuery
+    Connection = MyConnection1
+    SQL.Strings = (
+      
+        'SELECT no_dana, bulan, kegiatan, jumlah FROM dana WHERE keterang' +
+        'an ='#39'keluar'#39)
+    Active = True
+    Left = 304
+    Top = 5
+  end
+end

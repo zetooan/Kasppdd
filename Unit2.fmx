@@ -1,0 +1,656 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Anggota KAS PPDD'
+  ClientHeight = 480
+  ClientWidth = 430
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 430.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'TabItem1'
+      object Rectangle1: TRectangle
+        Align = MostTop
+        Fill.Color = claRoyalblue
+        Size.Width = 430.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claRoyalblue
+        OnClick = Rectangle1Click
+        object Label1: TLabel
+          Align = Left
+          StyledSettings = [Family]
+          Size.Width = 241.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claWhite
+          Text = '   <- Anggota KAS PPDD'
+        end
+      end
+      object ScrollBox1: TScrollBox
+        Align = Client
+        Size.Width = 430.000000000000000000
+        Size.Height = 435.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 430.000000000000000000
+        Viewport.Height = 435.000000000000000000
+        object Rectangle5: TRectangle
+          Align = Top
+          Fill.Color = claNull
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 410.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            Size.Width = 410.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = '   Cari No Anggota atau Username'
+            OnChange = Edit1Change
+            object SearchEditButton1: TSearchEditButton
+              CanFocus = False
+              Cursor = crArrow
+              Size.Width = 44.000000000000000000
+              Size.Height = 29.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+            end
+          end
+        end
+        object Rectangle8: TRectangle
+          Align = Top
+          Fill.Color = claNull
+          Position.X = 10.000000000000000000
+          Size.Width = 410.000000000000000000
+          Size.Height = 10.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+        end
+        object Rectangle9: TRectangle
+          Align = MostLeft
+          Fill.Color = claNull
+          Size.Width = 10.000000000000000000
+          Size.Height = 435.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+        end
+        object Rectangle10: TRectangle
+          Align = MostRight
+          Fill.Color = claNull
+          Position.X = 420.000000000000000000
+          Size.Width = 10.000000000000000000
+          Size.Height = 435.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+        end
+        object Rectangle11: TRectangle
+          Align = Top
+          Fill.Color = claNull
+          Position.X = 10.000000000000000000
+          Position.Y = 43.000000000000000000
+          Size.Width = 410.000000000000000000
+          Size.Height = 102.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          object Rectangle4: TRectangle
+            Align = Top
+            Fill.Color = claNull
+            Size.Width = 410.000000000000000000
+            Size.Height = 73.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claNull
+            object Rectangle6: TRectangle
+              Align = Left
+              Fill.Color = claNull
+              Size.Width = 169.000000000000000000
+              Size.Height = 73.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claNull
+              object Label4: TLabel
+                Position.Y = 8.000000000000000000
+                Size.Width = 81.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'No Anggota : '
+              end
+              object Label5: TLabel
+                Position.X = 72.000000000000000000
+                Position.Y = 8.000000000000000000
+                Size.Width = 97.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                Text = '20211221091436'
+              end
+              object Label6: TLabel
+                Position.X = 1.000000000000000000
+                Position.Y = 32.000000000000000000
+                Size.Width = 80.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Username    :'
+              end
+              object Label7: TLabel
+                Position.X = 72.000000000000000000
+                Position.Y = 32.000000000000000000
+                Size.Width = 89.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'anggota'
+              end
+            end
+            object Rectangle7: TRectangle
+              Align = Right
+              Fill.Color = claNull
+              Position.X = 314.000000000000000000
+              Size.Width = 96.000000000000000000
+              Size.Height = 73.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claNull
+              object Button1: TButton
+                Position.X = 16.000000000000000000
+                Position.Y = 8.000000000000000000
+                Size.Width = 80.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Edit'
+                OnClick = Button1Click
+              end
+              object Button2: TButton
+                Position.X = 16.000000000000000000
+                Position.Y = 40.000000000000000000
+                Size.Width = 80.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'Hapus'
+                OnClick = Button2Click
+              end
+            end
+          end
+          object Button3: TButton
+            Align = Right
+            Position.X = 330.000000000000000000
+            Position.Y = 73.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 29.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Tambah'
+            OnClick = Button3Click
+          end
+        end
+        object StringGrid1: TStringGrid
+          Align = Top
+          Position.X = 10.000000000000000000
+          Position.Y = 145.000000000000000000
+          Size.Width = 410.000000000000000000
+          Size.Height = 290.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          ReadOnly = True
+          RowCount = 2
+          RowHeight = 21.000000000000000000
+          Viewport.Width = 406.000000000000000000
+          Viewport.Height = 265.000000000000000000
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'TabItem2'
+      object Rectangle2: TRectangle
+        Align = Top
+        Fill.Color = claRoyalblue
+        Size.Width = 430.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claRoyalblue
+        OnClick = Rectangle2Click
+        object Label2: TLabel
+          Align = Left
+          StyledSettings = [Family]
+          Size.Width = 201.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claWhite
+          Text = '   <- Tambah Anggota'
+        end
+      end
+      object Label8: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 88.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Username'
+      end
+      object Label9: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'No Hp'
+      end
+      object Label10: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 152.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Password'
+      end
+      object Label11: TLabel
+        StyledSettings = [Family, Size]
+        Position.X = 272.000000000000000000
+        Position.Y = 80.000000000000000000
+        Size.Width = 17.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claRed
+        Text = '*'
+      end
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 5
+        Position.X = 128.000000000000000000
+        Position.Y = 88.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label12: TLabel
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 32.000000000000000000
+        Position.Y = 56.000000000000000000
+        TextSettings.Font.Size = 14.000000000000000000
+        Text = 'Data Anggota'
+      end
+      object Edit3: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 7
+        Position.X = 128.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label13: TLabel
+        StyledSettings = [Family, Size]
+        Position.X = 272.000000000000000000
+        Position.Y = 112.000000000000000000
+        Size.Width = 17.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claRed
+        Text = '*'
+      end
+      object Label14: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 184.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Ulangi Password'
+      end
+      object Edit4: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 10
+        Password = True
+        Position.X = 128.000000000000000000
+        Position.Y = 152.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object PasswordEditButton1: TPasswordEditButton
+          CanFocus = False
+          Cursor = crArrow
+          Size.Width = 28.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object Edit5: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 11
+        Password = True
+        Position.X = 128.000000000000000000
+        Position.Y = 184.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object PasswordEditButton2: TPasswordEditButton
+          CanFocus = False
+          Cursor = crArrow
+          Size.Width = 28.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object Label15: TLabel
+        StyledSettings = [Family, Size]
+        Position.X = 272.000000000000000000
+        Position.Y = 144.000000000000000000
+        Size.Width = 17.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claRed
+        Text = '*'
+      end
+      object Label16: TLabel
+        StyledSettings = [Family, Size]
+        Position.X = 272.000000000000000000
+        Position.Y = 176.000000000000000000
+        Size.Width = 17.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claRed
+        Text = '*'
+      end
+      object Button4: TButton
+        Position.X = 168.000000000000000000
+        Position.Y = 240.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 14
+        Text = 'Tambah'
+        OnClick = Button4Click
+      end
+      object Label17: TLabel
+        StyledSettings = [Family, Size, Style]
+        Position.X = 32.000000000000000000
+        Position.Y = 216.000000000000000000
+        Size.Width = 241.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claRed
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'TabItem3'
+      object Rectangle3: TRectangle
+        Align = Top
+        Fill.Color = claRoyalblue
+        Size.Width = 430.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claRoyalblue
+        OnClick = Rectangle3Click
+        object Label3: TLabel
+          Align = Left
+          StyledSettings = [Family]
+          Size.Width = 201.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claWhite
+          Text = '   <- Edit Anggota'
+        end
+      end
+      object Label18: TLabel
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 24.000000000000000000
+        Position.Y = 64.000000000000000000
+        TextSettings.Font.Size = 14.000000000000000000
+        Text = 'Data Anggota'
+      end
+      object Label19: TLabel
+        Position.X = 24.000000000000000000
+        Position.Y = 96.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'No Anggota'
+      end
+      object Edit6: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        ReadOnly = True
+        Position.X = 120.000000000000000000
+        Position.Y = 96.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = Edit6Change
+      end
+      object Username: TLabel
+        Position.X = 24.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Username'
+      end
+      object Edit7: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 5
+        Position.X = 120.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit8: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 6
+        Position.X = 120.000000000000000000
+        Position.Y = 160.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit9: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 7
+        Password = True
+        Position.X = 120.000000000000000000
+        Position.Y = 192.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object PasswordEditButton3: TPasswordEditButton
+          CanFocus = False
+          Cursor = crArrow
+          Size.Width = 28.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object Edit10: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 8
+        Password = True
+        Position.X = 120.000000000000000000
+        Position.Y = 224.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object PasswordEditButton4: TPasswordEditButton
+          CanFocus = False
+          Cursor = crArrow
+          Size.Width = 28.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object Label20: TLabel
+        Position.X = 24.000000000000000000
+        Position.Y = 160.000000000000000000
+        Text = 'No Hp'
+      end
+      object Label21: TLabel
+        Position.X = 24.000000000000000000
+        Position.Y = 192.000000000000000000
+        Text = 'Password'
+      end
+      object Label22: TLabel
+        Position.X = 24.000000000000000000
+        Position.Y = 224.000000000000000000
+        Text = 'Ulangi Password'
+      end
+      object Label23: TLabel
+        StyledSettings = [Family, Size]
+        Position.X = 280.000000000000000000
+        Position.Y = 88.000000000000000000
+        Size.Width = 17.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claRed
+        Text = '*'
+      end
+      object Label24: TLabel
+        StyledSettings = [Family, Size]
+        Position.X = 280.000000000000000000
+        Position.Y = 152.000000000000000000
+        Size.Width = 17.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claRed
+        Text = '*'
+      end
+      object Label25: TLabel
+        StyledSettings = [Family, Size]
+        Position.X = 280.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 17.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claRed
+        Text = '*'
+      end
+      object Label26: TLabel
+        StyledSettings = [Family, Size, Style]
+        Position.X = 24.000000000000000000
+        Position.Y = 248.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claRed
+      end
+      object Button5: TButton
+        Position.X = 200.000000000000000000
+        Position.Y = 280.000000000000000000
+        TabOrder = 16
+        Text = 'Edit'
+        OnClick = Button5Click
+      end
+    end
+  end
+  object MyConnection1: TMyConnection
+    Database = 'ppdd_kas'
+    Username = 'root'
+    Server = 'localhost'
+    Connected = True
+    LoginPrompt = False
+    Left = 336
+  end
+  object MyQuery1: TMyQuery
+    Connection = MyConnection1
+    SQL.Strings = (
+      'SELECT * FROM anggota WHERE jabatan ='#39'Anggota'#39)
+    Active = True
+    Left = 352
+    Top = 48
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = MyQuery1
+    ScopeMappings = <>
+    Left = 288
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 252
+    Top = 65533
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <
+        item
+          MemberName = 'no_anggota'
+        end
+        item
+          MemberName = 'username'
+        end
+        item
+          MemberName = 'no_hp'
+        end>
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'no_anggota'
+      Component = Label5
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'username'
+      Component = Label7
+      ComponentProperty = 'Text'
+    end
+  end
+  object MyQuery2: TMyQuery
+    Connection = MyConnection1
+    Left = 304
+    Top = 56
+  end
+end

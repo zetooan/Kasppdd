@@ -1,0 +1,202 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Pembayaran Kas'
+  ClientHeight = 404
+  ClientWidth = 331
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = claRoyalblue
+    Size.Width = 331.000000000000000000
+    Size.Height = 45.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claRoyalblue
+    OnClick = Rectangle1Click
+    object Label1: TLabel
+      Align = Left
+      StyledSettings = [Family]
+      Size.Width = 201.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.FontColor = claWhite
+      Text = '   <- Pembayaran Kas'
+    end
+  end
+  object Grid1: TGrid
+    Align = Bottom
+    Position.Y = 232.000000000000000000
+    Size.Width = 331.000000000000000000
+    Size.Height = 172.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ReadOnly = True
+    RowCount = 6
+    RowHeight = 21.000000000000000000
+    Viewport.Width = 327.000000000000000000
+    Viewport.Height = 147.000000000000000000
+  end
+  object label2: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'No Dana / Iuran'
+  end
+  object Label3: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'No Anggota'
+  end
+  object Label4: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Jumlah'
+  end
+  object Button1: TButton
+    Position.X = 88.000000000000000000
+    Position.Y = 176.000000000000000000
+    TabOrder = 9
+    Text = 'Bayar'
+    OnClick = Button1Click
+  end
+  object Label5: TLabel
+    Position.X = 120.000000000000000000
+    Position.Y = 96.000000000000000000
+    Text = '20211221231252'
+  end
+  object Label6: TLabel
+    Position.X = 120.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = '20211221091436'
+  end
+  object Label7: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 144.000000000000000000
+    Position.Y = 144.000000000000000000
+    TextSettings.FontColor = claGreen
+    Text = '1003'
+  end
+  object Label8: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Data Kas Yang Belum dibayar'
+  end
+  object Label9: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 120.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 17.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claGreen
+    Text = 'Rp.'
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 15
+    Position.X = 8.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Cari no dana / iuran'
+    OnChange = Edit1Change
+    object SearchEditButton1: TSearchEditButton
+      CanFocus = False
+      Cursor = crArrow
+      Size.Width = 28.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+  end
+  object MyQuery1: TMyQuery
+    Connection = MyConnection1
+    SQL.Strings = (
+      'SELECT * FROM dana WHERE keterangan ='#39'kas'#39' AND status ='#39'belum'#39)
+    Active = True
+    Left = 240
+    Top = 120
+  end
+  object MyConnection1: TMyConnection
+    Database = 'ppdd_kas'
+    Username = 'root'
+    Server = 'localhost'
+    Connected = True
+    LoginPrompt = False
+    Left = 272
+    Top = 168
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = MyQuery1
+    ScopeMappings = <>
+    Left = 248
+    Top = 192
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'no_dana'
+        end
+        item
+          MemberName = 'no_anggota'
+        end
+        item
+          MemberName = 'jumlah'
+        end
+        item
+          MemberName = 'status'
+        end>
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'no_dana'
+      Component = Label5
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'no_anggota'
+      Component = Label6
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText3: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'jumlah'
+      Component = Label7
+      ComponentProperty = 'Text'
+    end
+  end
+  object MyQuery2: TMyQuery
+    Connection = MyConnection1
+    Left = 288
+    Top = 128
+  end
+end

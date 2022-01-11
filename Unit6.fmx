@@ -1,0 +1,206 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Pengeluaran'
+  ClientHeight = 442
+  ClientWidth = 393
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = claRoyalblue
+    Size.Width = 393.000000000000000000
+    Size.Height = 45.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claRoyalblue
+    OnClick = Rectangle1Click
+    object Label1: TLabel
+      Align = Left
+      StyledSettings = [Family]
+      Size.Width = 193.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.FontColor = claWhite
+      Text = '   <- Pengeluaran'
+    end
+  end
+  object Grid1: TGrid
+    Align = Bottom
+    Position.Y = 256.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 186.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    RowCount = 2
+    RowHeight = 21.000000000000000000
+    Viewport.Width = 389.000000000000000000
+    Viewport.Height = 161.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    Position.X = 104.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Position.X = 104.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    ReadOnly = True
+    Position.X = 104.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    OnChange = Edit3Change
+  end
+  object Edit4: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 10
+    Position.X = 8.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = '   Cari Dari Kegiatan'
+    OnChange = Edit4Change
+    object SearchEditButton1: TSearchEditButton
+      CanFocus = False
+      Cursor = crArrow
+      Size.Width = 28.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+  end
+  object Button1: TButton
+    Position.X = 288.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = 'Baru'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 288.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 89.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Simpan / Edit'
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Position.X = 288.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'Hapus'
+    OnClick = Button3Click
+  end
+  object Label2: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 96.000000000000000000
+    Text = 'No Dana'
+  end
+  object Label3: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 128.000000000000000000
+    Text = 'Kegiatan'
+  end
+  object Label4: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 160.000000000000000000
+    Text = 'Jumlah'
+  end
+  object Label5: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 8.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claRed
+  end
+  object Label6: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 232.000000000000000000
+    Text = 'Pengeluaran Kas'
+  end
+  object MyConnection1: TMyConnection
+    Database = 'ppdd_kas'
+    Username = 'root'
+    Server = 'localhost'
+    Connected = True
+    LoginPrompt = False
+    Left = 64
+    Top = 216
+  end
+  object MyQuery1: TMyQuery
+    Connection = MyConnection1
+    SQL.Strings = (
+      'SELECT * FROM dana WHERE keterangan = '#39'keluar'#39)
+    Active = True
+    Left = 208
+    Top = 216
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = MyQuery1
+    ScopeMappings = <>
+    Left = 184
+    Top = 208
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'no_dana'
+        end
+        item
+          MemberName = 'Kegiatan'
+        end
+        item
+          MemberName = 'jumlah'
+        end>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'no_dana'
+      Control = Edit3
+      Track = False
+    end
+  end
+  object MyQuery2: TMyQuery
+    Connection = MyConnection1
+    Left = 264
+    Top = 224
+  end
+end

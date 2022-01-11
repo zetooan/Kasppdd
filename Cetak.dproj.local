@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/28 21:56:26.000.407,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/10 23:05:48.000.575,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/10 23:55:58.000.377,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/22 10:30:38.000.556,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/22 10:40:39.000.736,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/22 10:41:01.000.161,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit10.dfm</Transaction>
+    <Transaction>2021/12/22 10:41:01.000.161,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit10.pas</Transaction>
+    <Transaction>2021/12/22 10:41:35.000.191,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Cetak.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

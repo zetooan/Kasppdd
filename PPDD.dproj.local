@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/28 21:56:26.000.407,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/10 23:05:48.000.575,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/10 23:55:58.000.377,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/20 11:02:11.000.350,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/20 11:08:25.000.206,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit1.pas</Transaction>
+    <Transaction>2021/12/20 11:08:25.000.206,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit1.fmx</Transaction>
+    <Transaction>2021/12/20 11:08:40.000.781,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\PPDD.dproj</Transaction>
+    <Transaction>2021/12/20 22:07:43.000.225,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit2.pas</Transaction>
+    <Transaction>2021/12/21 11:00:13.000.927,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit3.pas</Transaction>
+    <Transaction>2021/12/22 00:07:11.000.186,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit4.pas</Transaction>
+    <Transaction>2021/12/22 00:49:50.000.167,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit5.pas</Transaction>
+    <Transaction>2021/12/22 02:15:41.000.471,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit6.pas</Transaction>
+    <Transaction>2021/12/22 08:34:39.000.132,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit7.pas</Transaction>
+    <Transaction>2021/12/22 09:02:04.000.429,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit8.pas</Transaction>
+    <Transaction>2021/12/22 10:21:55.000.341,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit9.pas</Transaction>
+    <Transaction>2021/12/22 10:39:41.000.587,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\Unit8.pas=</Transaction>
+    <Transaction>2021/12/22 11:08:33.000.969,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\kasppdd fix\ModelSupport_PPDD\default.txaPackage</Transaction>
+  </Transactions>
+</BorlandProject>
